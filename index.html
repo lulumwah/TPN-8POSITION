@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta</title>
+    <style>
+        body {
+            background-color: rgb(223, 223, 223); /*cambia el color del fondo de todo el body de la pagina*/
+            position: relative;
+        }
+
+        .container { /*contenedor de las cartas*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } /*mueven las cartas con display, usamos aling-items para alinear y justify-content para centrar el contenido*/
+        .carta{
+            background-color: white; /*cambiamos el color de fondo de la carta*/
+            padding: 40px 35px; /*Con esto ajustamos el tamaño de ancho y alto de las cajas*/
+            margin-right: 20px; /*para separar el margen de la carta*/
+           border-radius: 8px; /*lo utilizamos para redondear la caja*/
+           position: relative ; /*Para que la posicion se quede dentro de esta caja*/
+        }
+        .imagen{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        }/*para centrar la imagen*/
+       
+        img{
+            border-radius: 11px;
+        }/*lo utilizamos en esta caja para redondear la imagen*/ 
+
+        .nombre{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        } /*utilizamos display-flex y justify-content center para que este texto se centre, luego utilizamos el padding bottom para que se separe de abajo*/
+
+        .trabajo{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        } /*Lo mismo que en la clase nombre*/
+        .informacion{
+            display: flex;
+            flex-direction: column; /*es para cambiar en columna*/
+            text-align: center; /*sirve para centrar el texto de la clase*/
+            padding-bottom: 10px; /*padding bottom lo utilizamos para que se separe de abajo*/
+            margin-bottom: rgb(181, 181, 181); /*se utiliza para el margen de la parte de abajo*/ 
+            border-bottom: solid 1px rgb(212, 210, 210); /*lo utilizamos para poder hacer una linea */
+        }
+        .apps{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top:30px;
+        } /*al igual que otras clases utilizamos esto para poder mover las cajas de las apps y que queden bien centradas y separadas*/
+        .online{
+            background-color: rgb(97, 150, 45); /*cambiamos el color de fondo de la caja*/
+            color: white; /*cambiamos el color de la letra*/
+            position: absolute; /*lo utilizamos pata que la posision de esta pueda ir moviendose dentro de una caja*/
+            padding: 4px 12px; /*cambiar el ancho y alto*/
+            border-radius: 10px; /*redondear las puntas*/
+            width: 40px;/*para el ancho de la caja*/
+            margin-left: 160px;
+            top: 9px;
+            
+        }
+        .offline{
+            background-color: rgb(150, 45, 45);
+            color: white;
+            position: absolute;
+            padding: 4px 12px;
+            border-radius: 10px;
+            width: 40px;
+            margin-left: 160px;
+            top: 9px;
+        } /*igual que en la antrior clase sino que esta tiene diferentes contenidos*/
+        
+        .contactar{
+            position: fixed;
+            background-color: deepskyblue;
+            color: white;
+            padding: 10px;
+            width: 100px;
+            right: 40px;
+            bottom: 40px;
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container"> <!--clase que va a contener las cartas-->
+        <div class="carta">
+            <div class="online">
+                Online
+            </div>
+            <div class="imagen">
+                <img src="https://media.glamour.mx/photos/65b1bdbe20efbfa063d2c5e7/1:1/w_1440,h_1440,c_limit/lana-del-rey-nuevo-look.jpg"
+                    width="150px" style="border: 5px solid rgb(49, 114, 199);"> <!--imagen que va a contener en la clase imagen-->
+            </div>
+            <div class="informacion">
+                <div class="nombre"><b>Ana García</b></div> <!--caja nombre en la que va a contener cada caja de esta clase un nombre diferente-->
+                <div class="trabajo">Desarrolladora Web Frontend</div>
+                <div class="informacionana">
+                    <div>Apasionada por crear experiencias</div>
+                    <div>web increíbles para toda la</div>
+                    <div>comunidad de Rio Negro.</div>
+                </div> <!--estas cajas van a contener un contenido diferente en cada caja en las que se utilizen las mismas clases-->
+            </div>
+            <div class="apps">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/6422/6422210.png" width="20px">
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/6422/6422202.png" width="20px">
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/6424/6424084.png" width="20px">
+                </div>
+            </div> <!--esta caja padre contiene mas div o cajas en las cuales se colocaran las imagenes con img de las redes sociales -->
+            
+        </div>
+        <div class="carta"> <!--en esta clase estan los diferentes contenidos de las clases que se repiten-->
+            <div class="offline">
+                Offline
+            </div>
+            <div class="imagen">
+                <img src="https://i.pinimg.com/280x280_RS/62/be/d2/62bed2ce3adf00cca5df67894bb20fe6.jpg"
+                    width="150px" style="border: 5px solid rgb(49, 114, 199);">
+            </div>
+            <div class="informacion">
+                <div class="nombre"><b>Mina Murray</b></div>
+                <div class="trabajo">Backend Developer</div>
+                <div class="informacionana">Experiencia desarrollando micro-<br>servicios y servicios REST<br>Experiencia en AWS.</div>
+            </div>
+            <div class="apps">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/6422/6422210.png" width="20px">
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/6422/6422202.png" width="20px">
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/6424/6424084.png" width="20px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contactar">
+        <img src="https://cdn-icons-png.flaticon.com/128/10484/10484843.png" width="20px">
+        Contactar
+    </div>
+</body>
+
+</html>
