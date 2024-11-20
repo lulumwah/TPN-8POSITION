@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .producto {
+            border: solid 1px black;
+            margin: 2px;
+            position: relative;
+            border-radius: 6px;
+
+        }
+
+        .aire {
+            border-top: solid 1px rgb(196, 196, 196);
+            margin-top: 50px;
+            padding-top: 12px;
+
+        }
+
+        .descuento {
+            display: flex;
+            align-items: flex-end;
+            gap: 15px;
+            padding: 8px;
+        }
+
+        .desc {
+            background-color: hwb(201 24% 11%);
+            color: white;
+            display: flex;
+            align-items: center;
+            height: 30px;
+            border-radius: 7px;
+        }
+
+        .carrito {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(243, 187, 48);
+            margin-top: 40px;
+            height: 35px;
+            align-items: center;
+            border-radius: 5px;
+
+        }
+
+        .cuotas {
+            position: absolute;
+            top: 160px;
+            left: 5px;
+            padding: 5px;
+            border: solid;
+            background-color: rgb(0, 132, 255);
+            color: white;
+            height: 60px;
+            width: 80px;
+            align-items: center;
+            border-radius: 7px;
+        }
+
+        .box2 {
+            padding: 20px;
+            margin-top: -60px;
+        }
+
+        .imgproduct {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .productosep {
+            margin-top: 20;
+        }
+
+        .cuotas18 {
+            font-size: 1em;
+            font-weight: 900;
+        }
+        .corazon{
+            position: absolute;
+            left: 178px;
+            top: 17px;
+        }
+        .vistarapida{
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        .ojo{
+            display: flex;
+            align-items: center;
+            margin-top: 70px;
+            color: rgb(32, 193, 193);
+            gap: 5px;
+            background-color: rgb(227, 227, 227);
+            border-radius: 9px;
+            border-color: rgb(227, 227, 227);
+            
+        }
+        .producto:hover .vistarapida{
+            opacity: 1;
+            transition: 0.5s;
+        }
+       /* font-weight el peso del contorno de la letra 100 a 900 */
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <div class="producto">
+
+            <div class="imgproduct">
+                <img src="https://arcencohogareasy.vtexassets.com/arquivos/ids/308392-500-auto?v=637698363875730000&width=500&height=auto&aspect=true"
+                    width="200">
+                    <div class="cuotas">
+                        <div><b>HASTA</b></div>
+                        <div style="display: flex;align-items: center;">
+                            <div class="cuotas18"><b>18</b></div>
+                            <div class="interes"><b>SIN INTERES</b></div>
+                        </div>
+                    </div>
+                    <div class="corazon">
+                        <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3916/3916585.png" width="20px"></a>
+                    </div>
+            </div>
+            <div class="vistarapida">
+                <button class="ojo"><img src="https://cdn-icons-png.flaticon.com/128/14385/14385450.png" width="20px"><span>vista rápida</span></button>
+                
+            </div>
+
+            <div class="box2">
+                <div class="productosep">
+                    <div>
+                        <div class="aire">
+                            <b>BGH</b>
+                        </div>
+                        <div>
+                            Aire Split 2300 Frigorias
+                        </div>
+                        <div>
+                            Frío Calor Bgh
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="descuento">
+                            <div class="desc"><b>-20%</b></div>
+                            <div><s>$999.995</s></div>
+                        </div>
+                    </div>
+                    <div><b>$799.996</b></div>
+                </div>
+                <div class="carrito"><b>Agregar al carrito</b></div>
+            </div>
+            
+        </div>
+  
+     
+    </main>
+</body>
+
+</html>
